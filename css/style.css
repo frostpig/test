@@ -1,0 +1,30 @@
+.well>ul>li {
+    color: #fff;
+    height: 100%
+}
+
+.container-fluid {
+    margin-left: 0px
+}
+
+ul {
+    list-style: none
+}
+
+#navbar>ul {
+    text-align: center;
+    padding: 10px;
+}
+
+#navbar>ul>li {
+    display: inline;
+    padding: 5px;
+    margin: 10px;
+    color: #fff;
+    size: 10pt;
+}
+
+#navbar>ul>li>a {
+    color: #fff;
+    size: 10pt;
+}
