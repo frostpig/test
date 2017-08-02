@@ -11,6 +11,20 @@ ul {
     list-style: none
 }
 
+li {
+    display: inline
+}
+
+h1 {
+    display: block;
+    font-size: 2em;
+    -webkit-margin-before: 0.67em;
+    -webkit-margin-after: 0.67em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
+}
+
 #navbar>ul {
     text-align: center;
     padding: 10px;
@@ -27,4 +41,37 @@ ul {
 #navbar>ul>li>a {
     color: #fff;
     size: 10pt;
+}
+
+.container>ul {
+    float: left;
+}
+
+#user-left {
+    color: #333;
+    float: left;
+}
+
+#user-left>a {
+    color: #ed155b
+}
+
+#search {
+    margin: 30px 0 20px;
+    text-align: center;
+    align-content: center;
+}
+
+#search>button {
+    margin-bottom: 15px;
+}
+
+.trangle {
+    position: absolute;
+    top: 13px;
+    right: 6px;
+    overflow: hidden;
+    width: 6px;
+    height: 3px;
+    background-position: 0 0;
 }

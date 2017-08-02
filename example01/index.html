@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>聚美优品测试网站</title>
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
 
-<body style="background: floralwhite">
+<body>
 
     <!--head 导航栏-->
     <nav class="navbar-collapse" style="background:#e50150" id="navbar">
@@ -28,10 +28,52 @@
     </nav>
     <!--登录指导栏-->
     <nav class="navbar-collapse" style="background:#f2f2f2" id="navbar-login">
-        <ul>
-            <li><a href="#">801主会场</a></li>
-        </ul>
+        <div class="container">
+            <ul>
+                <li class="" id="user-left">欢迎您，<a href="#">frost_pig</a><a href="#">[退出]</a></li>
+            </ul>
+            <ul style="float: right" id="user-right">
+                <li><a href="#">正品保证</a></li>
+                <li><a href="#">订单查询</a></li>
+                <li><a href="#">收藏的品牌</a></li>
+                <li id="select-menu" class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">我的聚美<b class="caret"></b></a>
+
+                    <ul class="dropdown-menu">
+                        <li>我的现金券</li>
+                        <li>我的订单</li>
+                        <li>我的金额</li>
+                        <li>我的消息</li>
+                        <li>会员中心</li>
+                    </ul>
+
+                </li>
+                <li><a href="#">手机聚美</a></li>
+                <li><a href="#">更多</a></li>
+            </ul>
+        </div>
     </nav>
+    <div class="container">
+        <div class="row">
+            <div class="span4">
+                <h1><a href="#" style="background: url(http://p0.jmstatic.com/templates/jumei/images/logo_new_v1.jpg)">聚美优品</a></h1>
+            </div>
+            <div class="span4 offset2">
+                <form id="search">
+                    <input type="hidden">
+                    <input type="search">
+                    <button type="submit">搜索</button>
+                </form>
+            </div>
+            <!--    <h1 class="span3"><a href="#" style="background: url(http://p0.jmstatic.com/templates/jumei/images/logo_new_v1.jpg)">聚美优品</a></h1>
+
+
+            <form class="span8">
+                <input type="hidden">
+                <input type="search">
+                <button type="submit">搜索</button>
+            </form>-->
+        </div>
+    </div>
     <!--body-->
     <div class="container-fluid " id="content">
         <div class="row-fluid ">
