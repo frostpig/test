@@ -12,46 +12,43 @@
 
 
 <body>
+
     <div class="container-fluid" style="background: burlywood">
         <div class="row">
             <!--第一个大行-->
             <!-- 不加fluid固定布局(即写死像素，固定多少个px)  加上fluid的为流式布局(不写死，以百分比表示)-->
-
-            <!--嵌套在里面-->
-            <div class="span3">
-                <!--集群组合 一个div   ps:span 表示列-->
-                <div class="row">
-                    <label class="span1">集群</label>
-                    <select class="span2">
-                    <option>集群1</option>
-                    <option>集群</option>
-                 </select>
-                </div>
-                <div class="row">
-                    <a href="index.html">嵌套的第</a>
-                </div>
-            </div>
-            <div class="span3">
-                <!--时间组合 第二个div-->
-                <div class="row">
-                    <label class="span1">时间选择</label>
-                    <select class="span2">
-                  <option>按分钟选择</option>
-                  <option>按小时选择</option>
-                  <option>按天选择</option> 
-                </select>
-                    <div>
-                        <input readonly>
+            <form>
+                <!--嵌套在里面-->
+                <div class="span3 offset2">
+                    <!--集群组合 一个div   ps:span 表示列-->
+                    <div class="row">
+                        <label class="span1 ">开始时间</label>
+                        <div class="span2 controls input-append date form_datetime" data-date="2017-06-16 14:25" data-date-format="yyyy-mm-dd hh:ii" data-link-field="dtp_input1" data-link-format="yyyy-mm-dd hh:ii">
+                            <input id="startTime" size="16" type="text" name="endTime" value="$!{endTime}" readonly>
+                            <span class="add-on"><i class="icon-th"></i></span>
+                        </div>
+                        <input type="hidden" id="dtp_input1" value="" /><br/>
                     </div>
                 </div>
-            </div>
+                <div class="span3 offset3">
+                    <!--时间组合 第二个div-->
+                    <div class="row">
+                        <label class="span1">结束时间</label>
+
+                        <div class="span2 controls input-append date form_datetime" data-date="2017-06-16 14:25" data-date-format="yyyy-mm-dd hh:ii" data-link-field="dtp_input1" data-link-format="yyyy-mm-dd hh:ii">
+                            <input id="endTime" size="16" type="text" name="endTime" value="$!{endTime}" readonly>
+                            <span class="add-on"><i class="icon-th"></i></span>
+                        </div>
+                        <input type="hidden" id="dtp_input2" value="" /><br/>
+                    </div>
+                </div>
+                <div class="span2 offset5">
+                    <input type="submit" value="查询查询">
+                </div>
+            </form>
         </div>
     </div>
 
-
-    <div class="container-fluid">
-
-    </div>
 
 </body>
 
